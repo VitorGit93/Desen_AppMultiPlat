@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaPage implements OnInit {
 
+  img1 = "assets/optimusPrime.png";
+  img2 = "assets/optimusPrimeTruck.png";
+
   constructor() { }
 
   ngOnInit() {

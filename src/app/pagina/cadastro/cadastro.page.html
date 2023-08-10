@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">E-mail</ion-label>
+      <ion-input placeholder="Informe o e-mail" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input placeholder="Informe a senha" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Gênero</ion-label>
+      <ion-select multiple="true" cancelText="Cancelar">
+        <ion-select-option value="f">Feminino</ion-select-option>
+        <ion-select-option value="m">Masculino</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-label>Receber informações?</ion-label>
+      <ion-toggle color="primary"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-list-header>Interesses</ion-list-header>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Backend</ion-label>
+      <ion-checkbox></ion-checkbox>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Frontend</ion-label>
+      <ion-checkbox slot="start" color="primary"></ion-checkbox>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button (click)="presentToast('bottom')">Click Me</ion-button>
+
+</ion-content>

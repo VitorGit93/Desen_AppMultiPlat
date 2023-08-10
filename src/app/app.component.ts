@@ -9,12 +9,7 @@ export class AppComponent {
     { title: 'Home teste', url: '/home', icon: 'Home' },
     { title: 'Botões', url: '/button', icon: 'radio-button-on' },
     { title: 'Listas', url: '/lista', icon: 'list' },
-    { title: 'Inbox', url: '/folder/inbox', icon: 'finger-print' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    { title: 'Cadastro', url: '/cadastro', icon: 'person' },
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() { }

@@ -7,8 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaPage implements OnInit {
 
-  img1 = "assets/optimusPrime.png";
-  img2 = "assets/optimusPrimeTruck.png";
+  nome = "Optimus Prime";
+  avatar = "assets/optimusPrime.png";
+
+
+  personagens = [
+    {
+      nome: "Optimus Prime",
+      avatar: "assets/optimusPrime.png",
+      forma: "Robô"
+    },
+    {
+      nome: "Optimus Prime Truck",
+      avatar: "assets/optimusPrimeTruck.png",
+      forma: "Caminhão"
+    }
+  ]
 
   constructor() { }
 

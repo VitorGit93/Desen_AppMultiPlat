@@ -3,22 +3,34 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>Lstas</ion-title>
+    <ion-title>Listas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
 
-  <ion-list>
+  <ion-list *ngFor="let p of personagens">
     <ion-item>
-      <ion-label>Optimus Prime</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Optimus Prime truck</ion-label>
+      <ion-label>{{p.nome}}</ion-label>
+      <ion-avatar slot="start">
+        <ion-img src="{{p.avatar}}"></ion-img>
+      </ion-avatar>
+      <ion-badge slot="end" color="primary">{{p.forma}}</ion-badge>
     </ion-item>
   </ion-list>
 
-  <ion-img src="{{img1}}"></ion-img>
-  <ion-img src="{{img2}}"></ion-img>
+
+  <br>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{nome}}</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-img alt="Imagem do {{nome}}" src="{{avatar}}"></ion-img>
+    </ion-card-content>
+  </ion-card>
+
 
 </ion-content>

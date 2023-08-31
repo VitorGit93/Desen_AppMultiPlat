@@ -1,0 +1,26 @@
+<ion-content [fullscreen]="true">
+
+  <ion-img src="assets/logo-anpede.png" class="logo"></ion-img>
+
+  <p>Sistema de empréstimos de equipamentos de mobildade e solicitação de fraudas</p>
+
+  <form>
+
+    <ion-item>
+      <ion-label position="floating">usuário</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" (click)="logar">Entrar</ion-button>
+
+  </form>
+
+  <ion-button expand="block" fill="outline" (click)="registrar()">Registrar</ion-button>
+
+
+</ion-content>

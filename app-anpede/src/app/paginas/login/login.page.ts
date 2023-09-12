@@ -20,7 +20,6 @@ export class LoginPage implements OnInit {
   registrar(){ this.nav.navigateForward('home'); }
 
 
-
   ngOnInit() {
   }
 
